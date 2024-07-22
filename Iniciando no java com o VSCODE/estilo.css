@@ -1,0 +1,17 @@
+/*É necessário definir algumas configurações no arquivo css para a funcionalidade do site
+a seguir foi definida a cor de fundo e a cor da letra do corpo, este arquivo está importado no código do arquivo "index.html"*/
+
+body{
+    background-color:blueviolet;
+}
+h1{
+    color: white;
+}
+
+.botao{ /*aqui estou abrindo o grupo 'botao' dos id's de botao definidos no html e personalizando*/
+    background-color:brown; /*comando para adicionar a cor de fundo do botão*/
+    color: white; /*comando para mudar a cor dos caracteres do botão*/
+    width: 100px; /*comando para especificar o tamnho do botão*/
+    height: 50px; /*comando para especificar a altura do botão*/
+    /*como eu defini a classe de todos os botões como botão, o comando altera todos*/
+}
