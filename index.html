@@ -1,0 +1,37 @@
+<!DOCTYPE html> <!--definindo que o documento é do tipo html (é um plugin para ajudar na definição do documento)-->
+<html lange="pt-br"> <!--abrindo o html e definindo a linguagem-->
+    <head> <!--cabeçalho da página-->
+        <title>Aula 02</title> <!--definindo título da página-->
+        <script>
+            function dizerOla() { <!--criando a função de um botão-->
+                alert("Seja bem-vindo, Olá!") <!--definindo a mensagem mostrada ao apertar o botão-->
+            } 
+        </script>
+    </head> <!--fechando o cabeçalho da página-->
+    <body> <!--corpo da página-->
+        <noscript>Seu navegador está desabilitado para o JavaScript</noscript> <!--caso tenha algum empecilho do usuário para o javascript-->
+        <h1>Bem vindo à aula 02</h1> <!--definindo o título que aparece para o usuário-->
+        <button id ="botão" onclick="dizerOla()">Dizer Olá</button> <!--definindo o botão no corpo da página e chamando a função-->
+    </body> <!--fechando o corpo da página-->
+</html> <!--fechando o html-->
+
+
+<!--essa de cima não é a melhor forma de se fazer, o ideal seria: -->
+<!DOCTYPE html>
+<html lange="pt-BR">
+    <head>
+        <meta charset="UTF-8" /> <!--definindo que tem caracteres da língua portuguesa-->
+        <title>Aula 02</title>
+        <script>
+            window.onload=function() { <!--quando carregar a página, vai ter dentro algumas funções (definindo as funções)-->
+                document.getElementById("hello").addEventListener("click",function() { <!--getElementById vai recuperar de um documento botão e permite colocar funções sobre-->
+                    alert("Bem-vindo ao JavaScript");
+                },false);
+            };
+        </script>
+    </head>
+    <body>
+        <nonscript>Seu navegador não suporta JavaScript ou está desabilitado.</nonscript>
+        <button id="hello">Dizer "Olá"</button>
+    </body>
+</html>
