@@ -1,0 +1,50 @@
+<!--html: estrutura
+css: estilização
+js: personalização e funcionamento dentro das páginas-->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06 Galeria de produtos</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <noscript>Seu navegador não tem suporte ou o JavaScript está desativado</noscript>
+    <h1 id="titulo">Galeria de Tênis</h1>
+    <!--criando divisões abaixo do título para saparar informações no site-->
+    <div class="container"> <!--definindo uma classe para essa divisão específica--> 
+        <div class = "card"> <!--outra classe dentro das divisões, onde ficará as imagens-->
+            <img src ="imgs/tenis 1.jpg" alt="tênis" class ="produtoimg"> <!--adicionando uma imagem dentro dessa divisão do site e colocando uma alternativa caso a imagem não apareça, além de definir uma classe para ela e todas as outras-->
+            <div class="containerCard"> <!--criando outra divisão e classe para conter informações do produto-->
+                <h4><b>Tênis Vans</b></h4> <!--definindo tipo do título com h4 e escrita em negrito com o b-->
+                <p>Design inovador, unindo conforto e beleza.<a class="saibamais" href="#"><br>Saiba mais</a></p> <!--tag '<p>'' para adicionar mais informações e tag '<a>' para adicionar uma função, definindo a classe e de onde ela será chamada-->
+            </div>
+        </div>
+
+        <div class = "card"> <!--outra classe dentro das divisões, onde ficará as imagens-->
+            <img src ="imgs/tenis 2.jpg" alt="tênis" class ="produtoimg"> <!--adicionando uma imagem dentro dessa divisão do site e colocando uma alternativa caso a imagem não apareça-->
+            <div class="containerCard"> <!--criando outra divisão e classe para conter informações do produto-->
+                    <h4><b>Tênis VM</b></h4> <!--definindo tipo do título com h4 e escrita em negrito com o b-->
+                    <p>Design inovador, unindo conforto e beleza.<a class="saibamais" href="#"><br>Saiba mais</a></p> <!--tag '<p>'' para adicionar mais informações e tag '<a>' para adicionar uma função, definindo a classe e de onde ela será chamada-->
+                
+            </div>
+        </div>
+
+        <div class = "card"> <!--outra classe dentro das divisões, onde ficará as imagens-->
+            <img src ="imgs/tenis 3.jpg" alt="tênis" class ="produtoimg"> <!--adicionando uma imagem dentro dessa divisão do site e colocando uma alternativa caso a imagem não apareça-->
+            <div class="containerCard"> <!--criando outra divisão e classe para conter informações do produto-->
+                <h4><b>Tênis Adidas</b></h4> <!--definindo tipo do título com h4 e escrita em negrito com o b-->
+                <p>Design inovador, unindo conforto e beleza.<a class="saibamais" href="#"><br>Saiba mais</a></p> <!--tag '<p>'' para adicionar mais informações e tag '<a>' para adicionar uma função, definindo a classe e de onde ela será chamada-->
+                    
+            </div>
+        </div>
+    </div>
+    <div id = "total"> <!--criando uma divisão para ampliar as imagens-->
+        <img id ="imgAmpliada" src="imgs/tenis 1.jpg" alt="Tênis ampliado">
+    </div>
+</body>
+</html>

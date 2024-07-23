@@ -1,0 +1,52 @@
+body{ /*definindo a cor de fundo do corpo*/
+    background-color: rgb(151, 234, 206);
+    margin: 0%;
+}
+
+h1{ /*definindo a cor e centralização do título*/
+    color: white;
+    text-align: center;
+}
+
+#total { /*chamando a id total do html*/
+    position: absolute; /*comando para cobrir a tela tola*/
+    display: none; /*bloqueia as funções por debaixo dessa tela*/
+    margin: 0%; /*zerando a margem*/
+    padding: 0%;
+    top: 0%;
+    width: 100%; /*definindo ocupação de 100% da tela*/
+    height: 100%; /*definindo ocupação de 100% da tela*/
+    background-color:rgba(0, 0, 0, 0.8); /*criando uma sombra atrás da foto que será ampliada*/
+} 
+
+#total img { /*'chamando' imagens que pertencem ao id total*/
+    /*centralizando a imagem que será ampliada*/
+    width: auto;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+.card { /*por se tratar de uma classe, chamados pelo ".card", onde card é o nome da classe*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /*dando uma "sombra" para delimitar os cards*/
+    width: 30%; /*definindo tamanho dos cards, para caber três em um página, aqui nesse caso*/
+    margin: 1%; /*definindo a margem de espaçamento entre eles*/
+    background-color: antiquewhite; /*cor de fundo dos cards*/
+} 
+
+.card:hover{ /*função para animar os cards quando o mouse passar em cima*/
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5); /*definindo sombra nos cards quando o mouse passa em cima*/
+}
+
+.card img{ /*alterando configurações das imagens dentro da classe 'cards'*/
+    width: 100%; /*ocupando o espaço estabelecido para os cards*/
+}
+
+.container{
+    display: flex; /*essa função coloca os cards ques estão dentro da classe 'container' um do lado do outro*/
+}
+
+.containerCard{ /*alerando configurações do conteúdo do card, classe 'containerCard'*/
+    padding: 2px 16px; /*alterando posição do conteúdo (altura e largura)*/
+}
