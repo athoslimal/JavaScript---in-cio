@@ -1,0 +1,51 @@
+<!--iniciado a partir do 'html:5' adicionado a linha:<meta http-equiv="X-UA-Compatible" content="IE=edge"
+será utilizado para a construção de uma calculadora>-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05</title>
+    <script src="script.js"></script> <!--importando o script criado para a funcionalidade da calculadora.-->
+    <link rel="stylesheet" href="estilo.css"> <!--importando a estilização definida no arquivo css-->
+</head>
+<body>
+    <noscript>O JavaScript está desativado ou não possui suporte no navegador.</noscript>
+    <h1>Calculadora</h1>
+    <form> <!--criando um formulário para o navegador enteder que terá entrada de dados(input)-->
+        <input type="text" id="num1"> <!--definindo o tipo do input e o id-->
+        + <!--para mostrar ao usuário que é uma soma-->
+        <input type="text" id="num2"> <!--definido como texto para facilitar, tanto o primeiro input como esse.-->
+        = <!--para mostrar ao usuário a que o campo seguinte é da resposta-->
+        <input type="text" id="result1" disabled> <!--criando esse input desabilitado para que o usuário não tenha como clicar nele, será apenas visível-->
+        <br/> <!--adicionando quebra de linha entre a soma e subtração-->
+        <br/>
+        <input type="text" id="num3">
+        -
+        <input type="text" id="num4">
+        =
+        <input type="text" id="result2" disabled>
+        <br/> 
+        <br/>
+        <input type="text" id="num5">
+        *
+        <input type="text" id="num6">
+        =
+        <input type="text" id="result3" disabled>
+        <br/>
+        <br/>
+        <input type="text" id="num7">
+        /
+        <input type="text" id="num8">
+        =
+        <input type="text" id="result4" disabled>
+    
+    </form>
+    <br/> <!--comando para pular uma linha-->
+    <button id="calcular">Calcular</button> <!--criando o botão que vai entregar o resultado quando clicado e definindo seu id-->
+
+
+</body>
+</html>

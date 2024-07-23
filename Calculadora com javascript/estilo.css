@@ -1,0 +1,8 @@
+body{
+    text-align: center; /*função para centralizar o corpo do programa no html*/
+    background-color: rgb(168, 9, 9); /*definindo a cor de fundo do programa que será executado no html*/
+}
+
+#calcular{ /*acessando o id do botão calcular e definindo a posição dele com base na margem esquerda da tela*/
+    margin-left: 480px;
+}
