@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(147, 222, 197);
+    margin: 0%;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+form{
+    display: flex; /*alinhamento do formulário*/
+    flex-direction: row; /*tudo que for sendo inserido ele vai emopurrando para linha de baixo*/
+    flex-wrap: wrap; /*empurra por completo o item que não estiver cabendo na tela*/
+    justify-content: center; /*posição dos botões dentro do form centralizada*/
+    align-items: stretch; /*o texto fica do tamanho padrão em formatação*/
+    width: 80%; /*ocupação do formulário na tela definido como 80%*/
+    margin-left: auto; /*padronizando no automático a margem esquerda e direita para ficarem do mesmo tamanho*/
+    margin-right: auto;
+}
+
+label{
+    width: 100px;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+input{
+    height: 20px;
+    width: 50%;
+    margin-left: 10%;
+
+}
+
+.item{
+    width: 100%;
+    text-align: center;
+}
