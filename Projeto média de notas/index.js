@@ -1,6 +1,6 @@
 //Resolvendo a primeira parte do programa, a entrada das notas
 
-const prompt = require("prompt-sync")(); //importando a função do promopt
+const prompt = require("prompt-sync")(); //importando a função do prompt
 let notas = []; //criando o array para armazenar as notas (tornando escalável para que atenda a quantidade que precisar)
 
 
